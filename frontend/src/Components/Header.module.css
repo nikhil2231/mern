@@ -1,0 +1,11 @@
+.nav >*:hover {
+    color: hotpink;
+}
+
+
+.logout {
+    color: red;
+    font-weight: bold;
+    padding: 1rem 1rem;
+   
+}

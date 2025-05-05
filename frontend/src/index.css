@@ -1,0 +1,21 @@
+main {
+  position: relative;
+  top: 8vh;
+  min-height: 100vh;
+}
+
+
+h3 {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+

@@ -1,0 +1,4 @@
+.onHover:hover {
+    background: rgba(242, 241, 241, 0.95);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
