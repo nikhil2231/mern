@@ -45,14 +45,13 @@ app.get('/', async (req, res)=> {
 
  const __dirname = path.resolve();
  app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
- app.use(express.static(path.join(__dirname, '/frontend/dist')));
- app.get('*', (_,res) => {
-    res.send(path.resolve(__dirname, "frontend", "dist", "index.html" ));
-  })
+ app.use(express.static(path.join(__dirname, '/frontend/build')));
+ 
 
-
-
-
+ app.get('*', (_, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+  });
+  
 
 
  app.use(notFound);
