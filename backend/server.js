@@ -47,7 +47,7 @@ app.get('/', async (req, res)=> {
  app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
  app.use(express.static(path.join(__dirname, '/frontend/dist')));
  app.get('*', (_,res) => {
-    res.send(path.resolve(__dirname, "frontend", "dist", "index,html" ));
+    res.send(path.resolve(__dirname, "frontend", "dist", "index.html" ));
   })
 
 
